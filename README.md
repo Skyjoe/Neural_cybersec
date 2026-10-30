@@ -51,11 +51,17 @@ Interface limpa desenvolvida em customtkinter com modo escuro e sistema de abas.
 ## 🛠️ Pré-requisitos e Dependências
 
 * **Python 3.10+** instalado no sistema.
+  
 * **Placa de Vídeo (GPU):** Recomenda-se uma GPU dedicada com **no mínimo 8 GB de VRAM** para carregar e executar o modelo Llama 3 8B localmente com boa performance.
+  
 * **Tesseract-OCR** instalado (necessário para a função de OCR/análise de tela):
+  
   * *Linux:* `sudo apt install tesseract-ocr tesseract-ocr-por`
+    
   * *Windows:* Baixe o instalador oficial e adicione ao PATH do sistema.
+    
 * Um modelo **Llama 3 (.gguf)** configurado para rodar localmente com `llama-cpp-python` ou `llama.cpp`.
+  
 * Uma chave de API gratuita do **VirusTotal** (para a verificação de hash de ficheiros descarregados).
 
 
