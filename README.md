@@ -34,6 +34,8 @@ Lê links copiados para a área de transferência e recorre à IA para identific
 
 Extrai texto do ecrã em tempo real através de OCR (pyesseract) para auditar possíveis comandos ou conteúdos maliciosos visíveis.
 
+Botão Analisar Tela - ao clicar, a interface do aplicativo desaparece por um segundo para capturar a tela aberta. Pode ser qualquer aplicativo que esteja visível no momento da captura. Analisa a tela e indica se há algum risco de segurança. Permite conversar no chat com o modelo de IA e até treinar o modelo, concordando ou discordando de sua análise.
+
 📊 Registo Forense Estruturado:
 
 Regista todos os eventos críticos de segurança (como deteções, ativações de quarentena e acessos de rede) num diário de auditoria em formato JSON (forense.json).
@@ -44,18 +46,18 @@ Interface limpa desenvolvida em customtkinter com modo escuro e sistema de abas.
 
 Ícone vetorial estilizado em alta definição na bandeja do sistema (System Tray).
 
-🛠️ Pré-requisitos e Dependências
-
-Python 3.10+ instalado no sistema.
-
-Tesseract-OCR instalado (necessário para a função de OCR/análise de tela):
-
-sudo apt install tesseract-ocr tesseract-ocr-por
 
 
-Um modelo Llama 3 (.gguf) configurado para rodar localmente com llama-cpp-python ou llama.cpp.
+## 🛠️ Pré-requisitos e Dependências
 
-Uma chave de API gratuita do VirusTotal (para a verificação de hash de ficheiros descarregados).
+* **Python 3.10+** instalado no sistema.
+* **Placa de Vídeo (GPU):** Recomenda-se uma GPU dedicada com **no mínimo 8 GB de VRAM** para carregar e executar o modelo Llama 3 8B localmente com boa performance.
+* **Tesseract-OCR** instalado (necessário para a função de OCR/análise de tela):
+  * *Linux:* `sudo apt install tesseract-ocr tesseract-ocr-por`
+  * *Windows:* Baixe o instalador oficial e adicione ao PATH do sistema.
+* Um modelo **Llama 3 (.gguf)** configurado para rodar localmente com `llama-cpp-python` ou `llama.cpp`.
+* Uma chave de API gratuita do **VirusTotal** (para a verificação de hash de ficheiros descarregados).
+
 
 📦 Instalação
 
